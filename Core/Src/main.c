@@ -202,9 +202,9 @@ void set_tb6612() {
 };
 
 void set_pid() {
-    balance.Kp = 8; //8// 20 * 0.6 = 12
+    balance.Kp = 9; //9  一旦不能直立，就调高Kp
     balance.Ki = 0;
-    balance.Kd = 12; //5// 38 * 0.6 = 22.8
+    balance.Kd = 29; //29  不断调高速度环的Kp和Ki，然后出现抖动就调高直立环的Kd
     balance.max_integral = 20;
     balance.min_integral = -20;
     balance.max_u = 200;
@@ -212,13 +212,13 @@ void set_pid() {
     balance.integral = 0;
     balance.last_error = 0;
 
-    speed.Kp = -4.5; // -4
-    speed.Ki = -0.0225; //-0.02
+    speed.Kp = -7; // -7
+    speed.Ki = -0.035; //-0.035 Ki = Kp / 200
     speed.Kd = 0; //
     speed.max_integral = 100;
     speed.min_integral = -100;
-    speed.max_u = 100;
-    speed.min_u = -100;
+    speed.max_u = 180;
+    speed.min_u = -180;
     speed.integral = 0;
     speed.last_error = 0;
 }
