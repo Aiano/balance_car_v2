@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/encoder.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/gpio.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/i2c.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/pid.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/startup/startup_stm32f103xb.s.obj"
+  "balance_car_v2.elf"
+  "balance_car_v2.elf.manifest"
+  "balance_car_v2.elf.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/balance_car_v2.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
