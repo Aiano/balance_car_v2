@@ -126,6 +126,10 @@ main.h
 main.h
 ../Core/Inc/main.h
 
+../Core/Inc/uart_parser.h
+usart.h
+../Core/Inc/usart.h
+
 ../Core/Inc/usart.h
 main.h
 ../Core/Inc/main.h
@@ -323,4 +327,6 @@ pid.h
 D:/SourceCodes/balance_car_v2/Core/Src/pid.h
 encoder.h
 D:/SourceCodes/balance_car_v2/Core/Src/encoder.h
+uart_parser.h
+D:/SourceCodes/balance_car_v2/Core/Src/uart_parser.h
 

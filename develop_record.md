@@ -158,6 +158,16 @@ typedef enum
 
 注意：已配对但是未打开串口的情况下，模块会保持快闪
 
+### AT命令模式：
+
+> https://blog.csdn.net/qq_38410730/article/details/80368485
+
+按住按钮上电，指示灯慢闪，进入AT模式
+
+注意输入AT指令最后要带上`\r\n`，比如`AT\r\n`
+
+
+
 ## 枚举enum
 
 > [enum教程](https://www.runoob.com/cprogramming/c-enum.html)

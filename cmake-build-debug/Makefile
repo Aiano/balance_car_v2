@@ -464,6 +464,30 @@ Core/Src/tim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\balance_car_v2.elf.dir\build.make CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.s
 .PHONY : Core/Src/tim.c.s
 
+Core/Src/uart_parser.obj: Core/Src/uart_parser.c.obj
+.PHONY : Core/Src/uart_parser.obj
+
+# target to build an object file
+Core/Src/uart_parser.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\balance_car_v2.elf.dir\build.make CMakeFiles/balance_car_v2.elf.dir/Core/Src/uart_parser.c.obj
+.PHONY : Core/Src/uart_parser.c.obj
+
+Core/Src/uart_parser.i: Core/Src/uart_parser.c.i
+.PHONY : Core/Src/uart_parser.i
+
+# target to preprocess a source file
+Core/Src/uart_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\balance_car_v2.elf.dir\build.make CMakeFiles/balance_car_v2.elf.dir/Core/Src/uart_parser.c.i
+.PHONY : Core/Src/uart_parser.c.i
+
+Core/Src/uart_parser.s: Core/Src/uart_parser.c.s
+.PHONY : Core/Src/uart_parser.s
+
+# target to generate assembly for a file
+Core/Src/uart_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\balance_car_v2.elf.dir\build.make CMakeFiles/balance_car_v2.elf.dir/Core/Src/uart_parser.c.s
+.PHONY : Core/Src/uart_parser.c.s
+
 Core/Src/usart.obj: Core/Src/usart.c.obj
 .PHONY : Core/Src/usart.obj
 
@@ -907,6 +931,9 @@ help:
 	@echo ... Core/Src/tim.obj
 	@echo ... Core/Src/tim.i
 	@echo ... Core/Src/tim.s
+	@echo ... Core/Src/uart_parser.obj
+	@echo ... Core/Src/uart_parser.i
+	@echo ... Core/Src/uart_parser.s
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s

@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj"
   "CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj"
   "CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj"
+  "CMakeFiles/balance_car_v2.elf.dir/Core/Src/uart_parser.c.obj"
   "CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj"
   "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"

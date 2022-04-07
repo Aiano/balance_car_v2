@@ -130,6 +130,9 @@
 		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Inc/tim.h">
 			<Option target="balance_car_v2.elf"/>
 		</Unit>
+		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Inc/uart_parser.h">
+			<Option target="balance_car_v2.elf"/>
+		</Unit>
 		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Inc/usart.h">
 			<Option target="balance_car_v2.elf"/>
 		</Unit>
@@ -173,6 +176,9 @@
 			<Option target="balance_car_v2.elf"/>
 		</Unit>
 		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Src/tim.c">
+			<Option target="balance_car_v2.elf"/>
+		</Unit>
+		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Src/uart_parser.c">
 			<Option target="balance_car_v2.elf"/>
 		</Unit>
 		<Unit filename="D:/SourceCodes/balance_car_v2/Core/Src/usart.c">

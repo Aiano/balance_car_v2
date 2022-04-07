@@ -42,6 +42,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/SourceCodes/balance_car_v2/Core/Src/tb6612.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj"
   "D:/SourceCodes/balance_car_v2/Core/Src/test_freq.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj"
   "D:/SourceCodes/balance_car_v2/Core/Src/tim.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj"
+  "D:/SourceCodes/balance_car_v2/Core/Src/uart_parser.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Core/Src/uart_parser.c.obj"
   "D:/SourceCodes/balance_car_v2/Core/Src/usart.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj"
   "D:/SourceCodes/balance_car_v2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "D:/SourceCodes/balance_car_v2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "D:/SourceCodes/balance_car_v2/cmake-build-debug/CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
