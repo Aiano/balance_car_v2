@@ -5505,13 +5505,13 @@ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel)
 
 /**
   * @brief  Period elapsed callback in non-blocking mode
-  * @param  period TIM handle
+  * @param  htim TIM handle
   * @retval None
   */
-__weak void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *period)
+__weak void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* Prevent unused argument(s) compilation warning */
-  UNUSED(period);
+  UNUSED(htim);
 
   /* NOTE : This function should not be modified, when the callback is needed,
             the HAL_TIM_PeriodElapsedCallback could be implemented in the user file

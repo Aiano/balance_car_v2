@@ -136,7 +136,7 @@ int main(void) {
         tb6612_set_value(&tb6612, MOTOR_A, u1 + u2);
         tb6612_set_value(&tb6612, MOTOR_B, u1 + u2);
 
-        HAL_Delay(10);
+        HAL_Delay(5);
         uint32_t freq = test_freq_end();
 
         printf("motorA:%f\tmotorB:%f\tfreq:%lu\n", motorA, motorB, freq);
@@ -202,23 +202,23 @@ void set_tb6612() {
 };
 
 void set_pid() {
-    balance.Kp = 9; //9  一旦不能直立，就调高Kp
+    balance.Kp = 360; //360  回复力
     balance.Ki = 0;
-    balance.Kd = 29; //29  不断调高速度环的Kp和Ki，然后出现抖动就调高直立环的Kd
-    balance.max_integral = 20;
-    balance.min_integral = -20;
-    balance.max_u = 200;
-    balance.min_u = -200;
+    balance.Kd = 1600; //1600  阻尼力
+    balance.max_integral = 720;
+    balance.min_integral = -720;
+    balance.max_u = 7200;
+    balance.min_u = -7200;
     balance.integral = 0;
     balance.last_error = 0;
 
-    speed.Kp = -7; // -7
-    speed.Ki = -0.035; //-0.035 Ki = Kp / 200
+    speed.Kp = -700; // -700
+    speed.Ki = -0; //-3.5 速度的积分就是距离，故速度积分误差可以让小车回到原位
     speed.Kd = 0; //
-    speed.max_integral = 100;
-    speed.min_integral = -100;
-    speed.max_u = 180;
-    speed.min_u = -180;
+    speed.max_integral = 720;
+    speed.min_integral = -720;
+    speed.max_u = 7200;
+    speed.min_u = -7200;
     speed.integral = 0;
     speed.last_error = 0;
 }

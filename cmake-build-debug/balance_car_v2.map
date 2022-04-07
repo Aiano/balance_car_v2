@@ -1559,7 +1559,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x08000110     0xafc8
+.text           0x08000110     0xafc0
                 0x08000110                . = ALIGN (0x4)
  *(.text)
  .text          0x08000110       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -1657,732 +1657,732 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x0800155c       0x40 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
                 0x0800155c                set_tb6612
  *fill*         0x0800159c        0x4 
- .text.set_pid  0x080015a0       0xc4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+ .text.set_pid  0x080015a0       0xb8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
                 0x080015a0                set_pid
  .text.Error_Handler
-                0x08001664        0x4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
-                0x08001664                Error_Handler
+                0x08001658        0x4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+                0x08001658                Error_Handler
  .text.SystemClock_Config
-                0x08001668       0x64 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
-                0x08001668                SystemClock_Config
- .text.main     0x080016cc      0x150 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
-                0x080016cc                main
+                0x0800165c       0x64 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+                0x0800165c                SystemClock_Config
+ .text.main     0x080016c0      0x150 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+                0x080016c0                main
  .text.MPU6050_Init
-                0x0800181c       0xa0 CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
-                0x0800181c                MPU6050_Init
+                0x08001810       0xa0 CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
+                0x08001810                MPU6050_Init
  .text.Kalman_getAngle
-                0x080018bc      0x1f2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
-                0x080018bc                Kalman_getAngle
- *fill*         0x08001aae        0x2 
+                0x080018b0      0x1f2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
+                0x080018b0                Kalman_getAngle
+ *fill*         0x08001aa2        0x6 
  .text.MPU6050_Read_All
-                0x08001ab0      0x29c CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
-                0x08001ab0                MPU6050_Read_All
+                0x08001aa8      0x29c CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
+                0x08001aa8                MPU6050_Read_All
  .text.pid_get_u
-                0x08001d4c       0xe0 CMakeFiles/balance_car_v2.elf.dir/Core/Src/pid.c.obj
-                0x08001d4c                pid_get_u
+                0x08001d44       0xe0 CMakeFiles/balance_car_v2.elf.dir/Core/Src/pid.c.obj
+                0x08001d44                pid_get_u
  .text.RetargetInit
-                0x08001e2c       0x20 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001e2c                RetargetInit
- .text._isatty  0x08001e4c       0x16 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001e4c                _isatty
- *fill*         0x08001e62        0x2 
- .text._write   0x08001e64       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001e64                _write
- .text._close   0x08001e98       0x18 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001e98                _close
- .text._lseek   0x08001eb0       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001eb0                _lseek
- .text._read    0x08001ec0       0x30 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001ec0                _read
- .text._fstat   0x08001ef0       0x1a CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
-                0x08001ef0                _fstat
- *fill*         0x08001f0a        0x2 
+                0x08001e24       0x20 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001e24                RetargetInit
+ .text._isatty  0x08001e44       0x16 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001e44                _isatty
+ *fill*         0x08001e5a        0x2 
+ .text._write   0x08001e5c       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001e5c                _write
+ .text._close   0x08001e90       0x18 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001e90                _close
+ .text._lseek   0x08001ea8       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001ea8                _lseek
+ .text._read    0x08001eb8       0x30 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001eb8                _read
+ .text._fstat   0x08001ee8       0x1a CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+                0x08001ee8                _fstat
+ *fill*         0x08001f02        0x2 
  .text.HAL_MspInit
-                0x08001f0c       0x44 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08001f0c                HAL_MspInit
+                0x08001f04       0x44 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08001f04                HAL_MspInit
  .text.NMI_Handler
-                0x08001f50        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f50                NMI_Handler
+                0x08001f48        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f48                NMI_Handler
  .text.HardFault_Handler
-                0x08001f52        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f52                HardFault_Handler
+                0x08001f4a        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f4a                HardFault_Handler
  .text.MemManage_Handler
-                0x08001f54        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f54                MemManage_Handler
+                0x08001f4c        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f4c                MemManage_Handler
  .text.BusFault_Handler
-                0x08001f56        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f56                BusFault_Handler
+                0x08001f4e        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f4e                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001f58        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f58                UsageFault_Handler
+                0x08001f50        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f50                UsageFault_Handler
  .text.SVC_Handler
-                0x08001f5a        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f5a                SVC_Handler
+                0x08001f52        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f52                SVC_Handler
  .text.DebugMon_Handler
-                0x08001f5c        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f5c                DebugMon_Handler
+                0x08001f54        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f54                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001f5e        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f5e                PendSV_Handler
+                0x08001f56        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f56                PendSV_Handler
  .text.SysTick_Handler
-                0x08001f60        0x8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f60                SysTick_Handler
+                0x08001f58        0x8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f58                SysTick_Handler
  .text.TIM2_IRQHandler
-                0x08001f68       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f68                TIM2_IRQHandler
+                0x08001f60       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f60                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x08001f78       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f78                TIM3_IRQHandler
+                0x08001f70       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f70                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x08001f88       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f88                TIM4_IRQHandler
+                0x08001f80       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f80                TIM4_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08001f98        0xc CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001f98                EXTI15_10_IRQHandler
- .text._getpid  0x08001fa4        0x4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
-                0x08001fa4                _getpid
- .text._kill    0x08001fa8       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
-                0x08001fa8                _kill
- .text._exit    0x08001fb8        0xc CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
-                0x08001fb8                _exit
- .text._sbrk    0x08001fc4       0x3c CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
-                0x08001fc4                _sbrk
+                0x08001f90        0xc CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001f90                EXTI15_10_IRQHandler
+ .text._getpid  0x08001f9c        0x4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
+                0x08001f9c                _getpid
+ .text._kill    0x08001fa0       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
+                0x08001fa0                _kill
+ .text._exit    0x08001fb0        0xc CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
+                0x08001fb0                _exit
+ .text._sbrk    0x08001fbc       0x3c CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
+                0x08001fbc                _sbrk
  .text.SystemInit
-                0x08002000        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08002000                SystemInit
+                0x08001ff8        0x2 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08001ff8                SystemInit
  .text.tb6612_init
-                0x08002002       0x16 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
-                0x08002002                tb6612_init
+                0x08001ffa       0x16 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
+                0x08001ffa                tb6612_init
  .text.tb6612_set_value
-                0x08002018       0x7e CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
-                0x08002018                tb6612_set_value
- *fill*         0x08002096        0x2 
+                0x08002010       0x7e CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
+                0x08002010                tb6612_set_value
+ *fill*         0x0800208e        0x2 
  .text.test_freq_begin
-                0x08002098       0x24 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
-                0x08002098                test_freq_begin
+                0x08002090       0x24 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
+                0x08002090                test_freq_begin
  .text.test_freq_end
-                0x080020bc       0x20 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
-                0x080020bc                test_freq_end
+                0x080020b4       0x20 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
+                0x080020b4                test_freq_end
  .text.MX_TIM2_Init
-                0x080020dc       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x080020dc                MX_TIM2_Init
+                0x080020d4       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x080020d4                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x0800213c       0x70 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x0800213c                MX_TIM3_Init
+                0x08002134       0x70 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x08002134                MX_TIM3_Init
  .text.MX_TIM4_Init
-                0x080021ac       0x64 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x080021ac                MX_TIM4_Init
+                0x080021a4       0x64 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x080021a4                MX_TIM4_Init
  .text.HAL_TIM_Base_MspInit
-                0x08002210       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x08002210                HAL_TIM_Base_MspInit
+                0x08002208       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x08002208                HAL_TIM_Base_MspInit
  .text.HAL_TIM_Encoder_MspInit
-                0x08002270       0xbc CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x08002270                HAL_TIM_Encoder_MspInit
+                0x08002268       0xbc CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x08002268                HAL_TIM_Encoder_MspInit
  .text.HAL_TIM_MspPostInit
-                0x0800232c       0x50 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x0800232c                HAL_TIM_MspPostInit
+                0x08002324       0x50 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x08002324                HAL_TIM_MspPostInit
  .text.MX_TIM1_Init
-                0x0800237c       0xfc CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
-                0x0800237c                MX_TIM1_Init
+                0x08002374       0xfc CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+                0x08002374                MX_TIM1_Init
  .text.MX_USART3_UART_Init
-                0x08002478       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
-                0x08002478                MX_USART3_UART_Init
+                0x08002470       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
+                0x08002470                MX_USART3_UART_Init
  .text.HAL_UART_MspInit
-                0x080024ac       0x78 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
-                0x080024ac                HAL_UART_MspInit
+                0x080024a4       0x78 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
+                0x080024a4                HAL_UART_MspInit
  .text.HAL_InitTick
-                0x08002524       0x4c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002524                HAL_InitTick
+                0x0800251c       0x4c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0800251c                HAL_InitTick
  .text.HAL_Init
-                0x08002570       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002570                HAL_Init
+                0x08002568       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08002568                HAL_Init
  .text.HAL_IncTick
-                0x08002594       0x18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002594                HAL_IncTick
+                0x0800258c       0x18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0800258c                HAL_IncTick
  .text.HAL_GetTick
-                0x080025ac        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080025ac                HAL_GetTick
+                0x080025a4        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080025a4                HAL_GetTick
  .text.HAL_GetTickFreq
-                0x080025b8        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080025b8                HAL_GetTickFreq
+                0x080025b0        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080025b0                HAL_GetTickFreq
  .text.HAL_Delay
-                0x080025c4       0x28 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080025c4                HAL_Delay
+                0x080025bc       0x28 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080025bc                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x080025ec       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080025ec                HAL_NVIC_SetPriorityGrouping
+                0x080025e4       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080025e4                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08002610       0x70 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002610                HAL_NVIC_SetPriority
+                0x08002608       0x70 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08002608                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08002680       0x1c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002680                HAL_NVIC_EnableIRQ
+                0x08002678       0x1c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08002678                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0800269c       0x28 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x0800269c                HAL_SYSTICK_Config
+                0x08002694       0x28 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08002694                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x080026c4      0x224 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080026c4                HAL_GPIO_Init
+                0x080026bc      0x224 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080026bc                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x080028e8        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080028e8                HAL_GPIO_WritePin
+                0x080028e0        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080028e0                HAL_GPIO_WritePin
  .text.HAL_GPIO_EXTI_Callback
-                0x080028f4        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080028f4                HAL_GPIO_EXTI_Callback
- *fill*         0x080028f6        0x2 
+                0x080028ec        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080028ec                HAL_GPIO_EXTI_Callback
+ *fill*         0x080028ee        0x2 
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x080028f8       0x1c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080028f8                HAL_GPIO_EXTI_IRQHandler
+                0x080028f0       0x1c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080028f0                HAL_GPIO_EXTI_IRQHandler
  .text.I2C_IsAcknowledgeFailed
-                0x08002914       0x32 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800290c       0x32 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x08002946       0x7c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800293e       0x7c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnMasterAddressFlagUntilTimeout
-                0x080029c2       0xaa CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080029ba       0xaa CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXEFlagUntilTimeout
-                0x08002a6c       0x54 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002a64       0x54 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryWrite
-                0x08002ac0       0xd8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002ab8       0xd8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryRead
-                0x08002b98      0x154 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002b90      0x154 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnBTFFlagUntilTimeout
-                0x08002cec       0x54 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002ce4       0x54 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnRXNEFlagUntilTimeout
-                0x08002d40       0x6a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- *fill*         0x08002daa        0x2 
+                0x08002d38       0x6a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ *fill*         0x08002da2        0x2 
  .text.HAL_I2C_Init
-                0x08002dac      0x1bc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08002dac                HAL_I2C_Init
+                0x08002da4      0x1bc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002da4                HAL_I2C_Init
  .text.HAL_I2C_Mem_Write
-                0x08002f68      0x164 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08002f68                HAL_I2C_Mem_Write
+                0x08002f60      0x164 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002f60                HAL_I2C_Mem_Write
  .text.HAL_I2C_Mem_Read
-                0x080030cc      0x348 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x080030cc                HAL_I2C_Mem_Read
+                0x080030c4      0x348 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080030c4                HAL_I2C_Mem_Read
  .text.RCC_Delay
-                0x08003414       0x2c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800340c       0x2c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08003440      0x410 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003440                HAL_RCC_OscConfig
+                0x08003438      0x410 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003438                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08003850       0x70 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003850                HAL_RCC_GetSysClockFreq
+                0x08003848       0x70 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003848                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x080038c0      0x16c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080038c0                HAL_RCC_ClockConfig
+                0x080038b8      0x16c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080038b8                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08003a2c        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003a2c                HAL_RCC_GetHCLKFreq
+                0x08003a24        0xc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003a24                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08003a38       0x20 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003a38                HAL_RCC_GetPCLK1Freq
+                0x08003a30       0x20 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003a30                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08003a58       0x20 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003a58                HAL_RCC_GetPCLK2Freq
+                0x08003a50       0x20 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003a50                HAL_RCC_GetPCLK2Freq
  .text.TIM_OC1_SetConfig
-                0x08003a78       0x5c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003a70       0x5c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x08003ad4       0x64 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003acc       0x64 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x08003b38       0x48 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003b30       0x48 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x08003b80       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003b78       0x24 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x08003ba4       0x26 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003b9c       0x26 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08003bca       0x10 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- *fill*         0x08003bda        0x2 
+                0x08003bc2       0x10 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ *fill*         0x08003bd2        0x2 
  .text.HAL_TIM_Base_Start_IT
-                0x08003bdc       0x68 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003bdc                HAL_TIM_Base_Start_IT
+                0x08003bd4       0x68 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003bd4                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_PWM_MspInit
-                0x08003c44        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c44                HAL_TIM_PWM_MspInit
+                0x08003c3c        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c3c                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08003c46        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c46                HAL_TIM_OC_DelayElapsedCallback
+                0x08003c3e        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c3e                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08003c48        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c48                HAL_TIM_IC_CaptureCallback
+                0x08003c40        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c40                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08003c4a        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c4a                HAL_TIM_PWM_PulseFinishedCallback
+                0x08003c42        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c42                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08003c4c        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c4c                HAL_TIM_TriggerCallback
+                0x08003c44        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c44                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x08003c4e      0x17a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003c4e                HAL_TIM_IRQHandler
+                0x08003c46      0x17a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003c46                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x08003dc8       0x74 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003dc8                TIM_Base_SetConfig
+                0x08003dc0       0x74 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003dc0                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x08003e3c       0x58 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003e3c                HAL_TIM_Base_Init
+                0x08003e34       0x58 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003e34                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x08003e94       0x58 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003e94                HAL_TIM_PWM_Init
+                0x08003e8c       0x58 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003e8c                HAL_TIM_PWM_Init
  .text.HAL_TIM_Encoder_Init
-                0x08003eec       0xb8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003eec                HAL_TIM_Encoder_Init
+                0x08003ee4       0xb8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003ee4                HAL_TIM_Encoder_Init
  .text.TIM_OC2_SetConfig
-                0x08003fa4       0x64 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003fa4                TIM_OC2_SetConfig
+                0x08003f9c       0x64 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003f9c                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08004008       0xd0 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08004008                HAL_TIM_PWM_ConfigChannel
+                0x08004000       0xd0 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08004000                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x080040d8       0x18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080040d8                TIM_ETR_SetConfig
+                0x080040d0       0x18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080040d0                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x080040f0       0xda CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080040f0                HAL_TIM_ConfigClockSource
+                0x080040e8       0xda CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080040e8                HAL_TIM_ConfigClockSource
  .text.TIM_CCxChannelCmd
-                0x080041ca       0x1e CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080041ca                TIM_CCxChannelCmd
+                0x080041c2       0x1e CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080041c2                TIM_CCxChannelCmd
  .text.HAL_TIM_PWM_Start
-                0x080041e8       0xdc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080041e8                HAL_TIM_PWM_Start
+                0x080041e0       0xdc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080041e0                HAL_TIM_PWM_Start
  .text.HAL_TIM_Encoder_Start
-                0x080042c4       0xcc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080042c4                HAL_TIM_Encoder_Start
+                0x080042bc       0xcc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080042bc                HAL_TIM_Encoder_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08004390       0x6c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08004390                HAL_TIMEx_MasterConfigSynchronization
+                0x08004388       0x6c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08004388                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x080043fc       0x52 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x080043fc                HAL_TIMEx_ConfigBreakDeadTime
+                0x080043f4       0x52 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x080043f4                HAL_TIMEx_ConfigBreakDeadTime
  .text.HAL_TIMEx_CommutCallback
-                0x0800444e        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x0800444e                HAL_TIMEx_CommutCallback
+                0x08004446        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08004446                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08004450        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08004450                HAL_TIMEx_BreakCallback
- *fill*         0x08004452        0x2 
+                0x08004448        0x2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08004448                HAL_TIMEx_BreakCallback
+ *fill*         0x0800444a        0x2 
  .text.UART_SetConfig
-                0x08004454       0x94 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800444c       0x94 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_WaitOnFlagUntilTimeout
-                0x080044e8       0x6c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080044e0       0x6c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x08004554       0x5e CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08004554                HAL_UART_Init
+                0x0800454c       0x5e CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800454c                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x080045b2       0xd8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x080045b2                HAL_UART_Transmit
+                0x080045aa       0xd8 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080045aa                HAL_UART_Transmit
  .text.HAL_UART_Receive
-                0x0800468a       0xe4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800468a                HAL_UART_Receive
- *fill*         0x0800476e        0x2 
+                0x08004682       0xe4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08004682                HAL_UART_Receive
+ *fill*         0x08004766        0x2 
  .text.Reset_Handler
-                0x08004770       0x48 CMakeFiles/balance_car_v2.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x08004770                Reset_Handler
+                0x08004768       0x48 CMakeFiles/balance_car_v2.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x08004768                Reset_Handler
  .text.Default_Handler
-                0x080047b8        0x2 CMakeFiles/balance_car_v2.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x080047b8                RTC_Alarm_IRQHandler
-                0x080047b8                EXTI2_IRQHandler
-                0x080047b8                TIM1_CC_IRQHandler
-                0x080047b8                PVD_IRQHandler
-                0x080047b8                EXTI3_IRQHandler
-                0x080047b8                EXTI0_IRQHandler
-                0x080047b8                I2C2_EV_IRQHandler
-                0x080047b8                ADC1_2_IRQHandler
-                0x080047b8                SPI1_IRQHandler
-                0x080047b8                TAMPER_IRQHandler
-                0x080047b8                DMA1_Channel4_IRQHandler
-                0x080047b8                USART3_IRQHandler
-                0x080047b8                RTC_IRQHandler
-                0x080047b8                DMA1_Channel7_IRQHandler
-                0x080047b8                CAN1_RX1_IRQHandler
-                0x080047b8                I2C1_EV_IRQHandler
-                0x080047b8                DMA1_Channel6_IRQHandler
-                0x080047b8                RCC_IRQHandler
-                0x080047b8                TIM1_TRG_COM_IRQHandler
-                0x080047b8                DMA1_Channel1_IRQHandler
-                0x080047b8                Default_Handler
-                0x080047b8                EXTI9_5_IRQHandler
-                0x080047b8                SPI2_IRQHandler
-                0x080047b8                DMA1_Channel5_IRQHandler
-                0x080047b8                EXTI4_IRQHandler
-                0x080047b8                USB_LP_CAN1_RX0_IRQHandler
-                0x080047b8                USB_HP_CAN1_TX_IRQHandler
-                0x080047b8                DMA1_Channel3_IRQHandler
-                0x080047b8                TIM1_UP_IRQHandler
-                0x080047b8                WWDG_IRQHandler
-                0x080047b8                TIM1_BRK_IRQHandler
-                0x080047b8                EXTI1_IRQHandler
-                0x080047b8                USART2_IRQHandler
-                0x080047b8                I2C2_ER_IRQHandler
-                0x080047b8                DMA1_Channel2_IRQHandler
-                0x080047b8                CAN1_SCE_IRQHandler
-                0x080047b8                FLASH_IRQHandler
-                0x080047b8                USART1_IRQHandler
-                0x080047b8                I2C1_ER_IRQHandler
-                0x080047b8                USBWakeUp_IRQHandler
- *fill*         0x080047ba        0x2 
- .text.__errno  0x080047bc        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
-                0x080047bc                __errno
+                0x080047b0        0x2 CMakeFiles/balance_car_v2.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x080047b0                RTC_Alarm_IRQHandler
+                0x080047b0                EXTI2_IRQHandler
+                0x080047b0                TIM1_CC_IRQHandler
+                0x080047b0                PVD_IRQHandler
+                0x080047b0                EXTI3_IRQHandler
+                0x080047b0                EXTI0_IRQHandler
+                0x080047b0                I2C2_EV_IRQHandler
+                0x080047b0                ADC1_2_IRQHandler
+                0x080047b0                SPI1_IRQHandler
+                0x080047b0                TAMPER_IRQHandler
+                0x080047b0                DMA1_Channel4_IRQHandler
+                0x080047b0                USART3_IRQHandler
+                0x080047b0                RTC_IRQHandler
+                0x080047b0                DMA1_Channel7_IRQHandler
+                0x080047b0                CAN1_RX1_IRQHandler
+                0x080047b0                I2C1_EV_IRQHandler
+                0x080047b0                DMA1_Channel6_IRQHandler
+                0x080047b0                RCC_IRQHandler
+                0x080047b0                TIM1_TRG_COM_IRQHandler
+                0x080047b0                DMA1_Channel1_IRQHandler
+                0x080047b0                Default_Handler
+                0x080047b0                EXTI9_5_IRQHandler
+                0x080047b0                SPI2_IRQHandler
+                0x080047b0                DMA1_Channel5_IRQHandler
+                0x080047b0                EXTI4_IRQHandler
+                0x080047b0                USB_LP_CAN1_RX0_IRQHandler
+                0x080047b0                USB_HP_CAN1_TX_IRQHandler
+                0x080047b0                DMA1_Channel3_IRQHandler
+                0x080047b0                TIM1_UP_IRQHandler
+                0x080047b0                WWDG_IRQHandler
+                0x080047b0                TIM1_BRK_IRQHandler
+                0x080047b0                EXTI1_IRQHandler
+                0x080047b0                USART2_IRQHandler
+                0x080047b0                I2C2_ER_IRQHandler
+                0x080047b0                DMA1_Channel2_IRQHandler
+                0x080047b0                CAN1_SCE_IRQHandler
+                0x080047b0                FLASH_IRQHandler
+                0x080047b0                USART1_IRQHandler
+                0x080047b0                I2C1_ER_IRQHandler
+                0x080047b0                USBWakeUp_IRQHandler
+ *fill*         0x080047b2        0x2 
+ .text.__errno  0x080047b4        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
+                0x080047b4                __errno
  .text.__libc_init_array
-                0x080047c8       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
-                0x080047c8                __libc_init_array
- .text.memset   0x08004810       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
-                0x08004810                memset
- .text.printf   0x080048b4       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
-                0x080048b4                printf
- .text.setvbuf  0x080048dc      0x1b0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
-                0x080048dc                setvbuf
+                0x080047c0       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+                0x080047c0                __libc_init_array
+ .text.memset   0x08004808       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+                0x08004808                memset
+ .text.printf   0x080048ac       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
+                0x080048ac                printf
+ .text.setvbuf  0x080048d4      0x1b0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
+                0x080048d4                setvbuf
  .text._vfprintf_r
-                0x08004a8c     0x1b58 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
-                0x08004a8c                _vfprintf_r
+                0x08004a84     0x1b58 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08004a84                _vfprintf_r
  .text.__sbprintf
-                0x080065e4       0x84 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x080065dc       0x84 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x08006668       0xd4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
-                0x08006668                __swsetup_r
+                0x08006660       0xd4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
+                0x08006660                __swsetup_r
  .text.startup.register_fini
-                0x0800673c       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08006750        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
-                0x08006750                atexit
- .text.quorem   0x0800675c      0x12c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
- .text._dtoa_r  0x08006888      0xecc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
-                0x08006888                _dtoa_r
+                0x08006734       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08006748        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+                0x08006748                atexit
+ .text.quorem   0x08006754      0x12c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x08006880      0xecc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+                0x08006880                _dtoa_r
  .text.__sflush_r
-                0x08007754      0x124 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
-                0x08007754                __sflush_r
+                0x0800774c      0x124 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x0800774c                __sflush_r
  .text._fflush_r
-                0x08007878       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
-                0x08007878                _fflush_r
+                0x08007870       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x08007870                _fflush_r
  .text._cleanup_r
-                0x080078d4        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x080078d4                _cleanup_r
- .text.__sinit  0x080078e0      0x10c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x080078e0                __sinit
+                0x080078cc        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x080078cc                _cleanup_r
+ .text.__sinit  0x080078d8      0x10c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x080078d8                __sinit
  .text.__sfp_lock_acquire
-                0x080079ec        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x080079ec                __sfp_lock_acquire
+                0x080079e4        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x080079e4                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x080079f8        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x080079f8                __sfp_lock_release
+                0x080079f0        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x080079f0                __sfp_lock_release
  .text.__libc_fini_array
-                0x08007a04       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
-                0x08007a04                __libc_fini_array
+                0x080079fc       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+                0x080079fc                __libc_fini_array
  .text._malloc_trim_r
-                0x08007a30       0xa0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
-                0x08007a30                _malloc_trim_r
- .text._free_r  0x08007ad0      0x200 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
-                0x08007ad0                _free_r
+                0x08007a28       0xa0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08007a28                _malloc_trim_r
+ .text._free_r  0x08007ac8      0x200 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08007ac8                _free_r
  .text._fwalk_reent
-                0x08007cd0       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
-                0x08007cd0                _fwalk_reent
+                0x08007cc8       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+                0x08007cc8                _fwalk_reent
  .text._localeconv_r
-                0x08007d18        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
-                0x08007d18                _localeconv_r
+                0x08007d10        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
+                0x08007d10                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x08007d20        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08007d20                __retarget_lock_init_recursive
+                0x08007d18        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08007d18                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x08007d24        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08007d24                __retarget_lock_close_recursive
+                0x08007d1c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08007d1c                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x08007d28        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08007d28                __retarget_lock_acquire_recursive
+                0x08007d20        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08007d20                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08007d2c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08007d2c                __retarget_lock_release_recursive
+                0x08007d24        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08007d24                __retarget_lock_release_recursive
  .text.__smakebuf_r
-                0x08007d30       0xe0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
-                0x08007d30                __smakebuf_r
+                0x08007d28       0xe0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+                0x08007d28                __smakebuf_r
  .text.__swhatbuf_r
-                0x08007e10       0x60 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
-                0x08007e10                __swhatbuf_r
- .text.malloc   0x08007e70       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
-                0x08007e70                malloc
+                0x08007e08       0x60 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+                0x08007e08                __swhatbuf_r
+ .text.malloc   0x08007e68       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+                0x08007e68                malloc
  .text._malloc_r
-                0x08007e80      0x558 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
-                0x08007e80                _malloc_r
- .text.memchr   0x080083d8       0x90 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
-                0x080083d8                memchr
+                0x08007e78      0x558 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x08007e78                _malloc_r
+ .text.memchr   0x080083d0       0x90 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
+                0x080083d0                memchr
  .text.__malloc_lock
-                0x08008468        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
-                0x08008468                __malloc_lock
+                0x08008460        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x08008460                __malloc_lock
  .text.__malloc_unlock
-                0x08008474        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
-                0x08008474                __malloc_unlock
- .text._Balloc  0x08008480       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008480                _Balloc
- .text._Bfree   0x080084cc       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x080084cc                _Bfree
+                0x0800846c        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x0800846c                __malloc_unlock
+ .text._Balloc  0x08008478       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008478                _Balloc
+ .text._Bfree   0x080084c4       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x080084c4                _Bfree
  .text.__multadd
-                0x080084e0       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x080084e0                __multadd
+                0x080084d8       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x080084d8                __multadd
  .text.__hi0bits
-                0x08008584       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008584                __hi0bits
+                0x0800857c       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800857c                __hi0bits
  .text.__lo0bits
-                0x080085c4       0x58 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x080085c4                __lo0bits
- .text.__i2b    0x0800861c       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800861c                __i2b
+                0x080085bc       0x58 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x080085bc                __lo0bits
+ .text.__i2b    0x08008614       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008614                __i2b
  .text.__multiply
-                0x08008678      0x15c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008678                __multiply
+                0x08008670      0x15c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008670                __multiply
  .text.__pow5mult
-                0x080087d4       0xb8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x080087d4                __pow5mult
+                0x080087cc       0xb8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x080087cc                __pow5mult
  .text.__lshift
-                0x0800888c       0xec c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800888c                __lshift
- .text.__mcmp   0x08008978       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008978                __mcmp
- .text.__mdiff  0x080089b8      0x14c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x080089b8                __mdiff
- .text.__d2b    0x08008b04       0xc4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008b04                __d2b
- .text.frexp    0x08008bc8       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
-                0x08008bc8                frexp
- .text._sbrk_r  0x08008c38       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
-                0x08008c38                _sbrk_r
- .text.__sread  0x08008c5c       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x08008c5c                __sread
+                0x08008884       0xec c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008884                __lshift
+ .text.__mcmp   0x08008970       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008970                __mcmp
+ .text.__mdiff  0x080089b0      0x14c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x080089b0                __mdiff
+ .text.__d2b    0x08008afc       0xc4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008afc                __d2b
+ .text.frexp    0x08008bc0       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
+                0x08008bc0                frexp
+ .text._sbrk_r  0x08008c30       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+                0x08008c30                _sbrk_r
+ .text.__sread  0x08008c54       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08008c54                __sread
  .text.__swrite
-                0x08008c80       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x08008c80                __swrite
- .text.__sseek  0x08008cc0       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x08008cc0                __sseek
+                0x08008c78       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08008c78                __swrite
+ .text.__sseek  0x08008cb8       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08008cb8                __sseek
  .text.__sclose
-                0x08008ce0        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x08008ce0                __sclose
- .text.strlen   0x08008ce8       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x08008ce8                strlen
- .text.strncpy  0x08008d44       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
-                0x08008d44                strncpy
+                0x08008cd8        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08008cd8                __sclose
+ .text.strlen   0x08008ce0       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x08008ce0                strlen
+ .text.strncpy  0x08008d3c       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
+                0x08008d3c                strncpy
  .text.__sprint_r.part.0
-                0x08008dac       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08008da4       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x08008e24       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x08008e24                __sprint_r
+                0x08008e1c       0x14 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08008e1c                __sprint_r
  .text._vfiprintf_r
-                0x08008e38      0xd98 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x08008e38                _vfiprintf_r
+                0x08008e30      0xd98 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08008e30                _vfiprintf_r
  .text.__sbprintf
-                0x08009bd0       0x84 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08009bc8       0x84 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text._write_r
-                0x08009c54       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
-                0x08009c54                _write_r
+                0x08009c4c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+                0x08009c4c                _write_r
  .text.__register_exitproc
-                0x08009c80       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08009c80                __register_exitproc
+                0x08009c78       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08009c78                __register_exitproc
  .text.__assert_func
-                0x08009d0c       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
-                0x08009d0c                __assert_func
+                0x08009d04       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
+                0x08009d04                __assert_func
  .text._calloc_r
-                0x08009d4c       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
-                0x08009d4c                _calloc_r
+                0x08009d44       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
+                0x08009d44                _calloc_r
  .text._close_r
-                0x08009dc4       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
-                0x08009dc4                _close_r
+                0x08009dbc       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+                0x08009dbc                _close_r
  .text._fclose_r
-                0x08009de8       0xcc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
-                0x08009de8                _fclose_r
+                0x08009de0       0xcc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+                0x08009de0                _fclose_r
  .text.fiprintf
-                0x08009eb4       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
-                0x08009eb4                fiprintf
+                0x08009eac       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
+                0x08009eac                fiprintf
  .text.__fputwc
-                0x08009edc       0xa0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
-                0x08009edc                __fputwc
+                0x08009ed4       0xa0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
+                0x08009ed4                __fputwc
  .text._fputwc_r
-                0x08009f7c       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
-                0x08009f7c                _fputwc_r
+                0x08009f74       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
+                0x08009f74                _fputwc_r
  .text._fstat_r
-                0x08009fe4       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
-                0x08009fe4                _fstat_r
+                0x08009fdc       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+                0x08009fdc                _fstat_r
  .text.__sfvwrite_r
-                0x0800a00c      0x2f0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
-                0x0800a00c                __sfvwrite_r
+                0x0800a004      0x2f0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
+                0x0800a004                __sfvwrite_r
  .text._isatty_r
-                0x0800a2fc       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
-                0x0800a2fc                _isatty_r
+                0x0800a2f4       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
+                0x0800a2f4                _isatty_r
  .text.__locale_mb_cur_max
-                0x0800a320        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
-                0x0800a320                __locale_mb_cur_max
+                0x0800a318        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+                0x0800a318                __locale_mb_cur_max
  .text._lseek_r
-                0x0800a32c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
-                0x0800a32c                _lseek_r
+                0x0800a324       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+                0x0800a324                _lseek_r
  .text.__ascii_mbtowc
-                0x0800a358       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
-                0x0800a358                __ascii_mbtowc
- .text.memmove  0x0800a384       0xf8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
-                0x0800a384                memmove
- .text._read_r  0x0800a47c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
-                0x0800a47c                _read_r
+                0x0800a350       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
+                0x0800a350                __ascii_mbtowc
+ .text.memmove  0x0800a37c       0xf8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
+                0x0800a37c                memmove
+ .text._read_r  0x0800a474       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+                0x0800a474                _read_r
  .text._realloc_r
-                0x0800a4a8      0x3dc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
-                0x0800a4a8                _realloc_r
+                0x0800a4a0      0x3dc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
+                0x0800a4a0                _realloc_r
  .text.__swbuf_r
-                0x0800a884       0xb0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
-                0x0800a884                __swbuf_r
+                0x0800a87c       0xb0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
+                0x0800a87c                __swbuf_r
  .text._wcrtomb_r
-                0x0800a934       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
-                0x0800a934                _wcrtomb_r
+                0x0800a92c       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
+                0x0800a92c                _wcrtomb_r
  .text.__ascii_wctomb
-                0x0800a970       0x1c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
-                0x0800a970                __ascii_wctomb
- .text.abort    0x0800a98c       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
-                0x0800a98c                abort
- .text.raise    0x0800a99c       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
-                0x0800a99c                raise
- .text._kill_r  0x0800a9f8       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
-                0x0800a9f8                _kill_r
+                0x0800a968       0x1c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
+                0x0800a968                __ascii_wctomb
+ .text.abort    0x0800a984       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
+                0x0800a984                abort
+ .text.raise    0x0800a994       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
+                0x0800a994                raise
+ .text._kill_r  0x0800a9f0       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
+                0x0800a9f0                _kill_r
  .text._getpid_r
-                0x0800aa20        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
-                0x0800aa20                _getpid_r
- *fill*         0x0800aa24        0x4 
- .text.atan     0x0800aa28      0x31c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
-                0x0800aa28                atan
- .text.fabs     0x0800ad44        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_fabs.o)
-                0x0800ad44                fabs
- .text.atan2    0x0800ad4c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-w_atan2.o)
-                0x0800ad4c                atan2
- .text.sqrt     0x0800ad50       0x50 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-w_sqrt.o)
-                0x0800ad50                sqrt
+                0x0800aa18        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
+                0x0800aa18                _getpid_r
+ *fill*         0x0800aa1c        0x4 
+ .text.atan     0x0800aa20      0x31c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
+                0x0800aa20                atan
+ .text.fabs     0x0800ad3c        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_fabs.o)
+                0x0800ad3c                fabs
+ .text.atan2    0x0800ad44        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-w_atan2.o)
+                0x0800ad44                atan2
+ .text.sqrt     0x0800ad48       0x50 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-w_sqrt.o)
+                0x0800ad48                sqrt
  .text.__ieee754_atan2
-                0x0800ada0      0x194 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
-                0x0800ada0                __ieee754_atan2
+                0x0800ad98      0x194 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
+                0x0800ad98                __ieee754_atan2
  .text.__ieee754_sqrt
-                0x0800af34      0x18c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_sqrt.o)
-                0x0800af34                __ieee754_sqrt
+                0x0800af2c      0x18c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_sqrt.o)
+                0x0800af2c                __ieee754_sqrt
  *(.glue_7)
- .glue_7        0x0800b0c0        0x0 linker stubs
+ .glue_7        0x0800b0b8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800b0c0        0x0 linker stubs
+ .glue_7t       0x0800b0b8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800b0c0        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x0800b0b8        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0800b0c0        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x0800b0c0                _init
- .init          0x0800b0c4        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x0800b0b8        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x0800b0b8                _init
+ .init          0x0800b0bc        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0800b0cc        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x0800b0cc                _fini
- .fini          0x0800b0d0        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
-                0x0800b0d8                . = ALIGN (0x4)
-                0x0800b0d8                _etext = .
+ .fini          0x0800b0c4        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x0800b0c4                _fini
+ .fini          0x0800b0c8        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+                0x0800b0d0                . = ALIGN (0x4)
+                0x0800b0d0                _etext = .
 
-.vfp11_veneer   0x0800b0d8        0x0
- .vfp11_veneer  0x0800b0d8        0x0 linker stubs
+.vfp11_veneer   0x0800b0d0        0x0
+ .vfp11_veneer  0x0800b0d0        0x0 linker stubs
 
-.v4_bx          0x0800b0d8        0x0
- .v4_bx         0x0800b0d8        0x0 linker stubs
+.v4_bx          0x0800b0d0        0x0
+ .v4_bx         0x0800b0d0        0x0 linker stubs
 
-.iplt           0x0800b0d8        0x0
- .iplt          0x0800b0d8        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800b0d0        0x0
+ .iplt          0x0800b0d0        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0800b0d8      0x4b8
-                0x0800b0d8                . = ALIGN (0x4)
+.rodata         0x0800b0d0      0x4b8
+                0x0800b0d0                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.main.str1.4
-                0x0800b0d8       0x1e CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
- *fill*         0x0800b0f6        0x2 
+                0x0800b0d0       0x1e CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+ *fill*         0x0800b0ee        0x2 
  .rodata.AHBPrescTable
-                0x0800b0f8       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800b0f8                AHBPrescTable
+                0x0800b0f0       0x10 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800b0f0                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800b108        0x8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800b108                APBPrescTable
+                0x0800b100        0x8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800b100                APBPrescTable
  .rodata.HAL_RCC_GetSysClockFreq.str1.4
-                0x0800b110       0x11 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800b121        0x3 
+                0x0800b108       0x11 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800b119        0x3 
  .rodata._global_impure_ptr
-                0x0800b124        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
-                0x0800b124                _global_impure_ptr
+                0x0800b11c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x0800b11c                _global_impure_ptr
  .rodata._vfprintf_r.str1.4
-                0x0800b128       0x42 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
- *fill*         0x0800b16a        0x2 
+                0x0800b120       0x42 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+ *fill*         0x0800b162        0x2 
  .rodata.blanks.1
-                0x0800b16c       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x0800b164       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata.zeroes.0
-                0x0800b17c       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x0800b174       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x0800b18c       0xa2 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+                0x0800b184       0xa2 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
                                  0xa6 (size before relaxing)
- *fill*         0x0800b22e        0x2 
+ *fill*         0x0800b226        0x2 
  .rodata.__multadd.str1.4
-                0x0800b230       0x7f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800b228       0x7f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
                                  0x93 (size before relaxing)
- *fill*         0x0800b2af        0x1 
+ *fill*         0x0800b2a7        0x1 
  .rodata.__mprec_bigtens
-                0x0800b2b0       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800b2b0                __mprec_bigtens
+                0x0800b2a8       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800b2a8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x0800b2d8       0xc8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800b2d8                __mprec_tens
- .rodata.p05.0  0x0800b3a0        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800b2d0       0xc8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800b2d0                __mprec_tens
+ .rodata.p05.0  0x0800b398        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
  .rodata._vfiprintf_r.str1.4
-                0x0800b3ac       0x2f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b3a4       0x2f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.blanks.1
-                0x0800b3ac       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b3a4       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.zeroes.0
-                0x0800b3bc       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b3b4       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.__assert_func.str1.4
-                0x0800b3cc       0x3f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
+                0x0800b3c4       0x3f c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
                                  0x43 (size before relaxing)
- *fill*         0x0800b40b        0x1 
+ *fill*         0x0800b403        0x1 
  .rodata._setlocale_r.str1.4
-                0x0800b40c        0xa c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+                0x0800b404        0xa c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x0800b416        0x2 
+ *fill*         0x0800b40e        0x2 
  .rodata.str1.4
-                0x0800b418        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
- *fill*         0x0800b41a        0x2 
+                0x0800b410        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+ *fill*         0x0800b412        0x2 
  .rodata._ctype_
-                0x0800b41c      0x101 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-ctype_.o)
-                0x0800b41c                _ctype_
- *fill*         0x0800b51d        0x3 
+                0x0800b414      0x101 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-ctype_.o)
+                0x0800b414                _ctype_
+ *fill*         0x0800b515        0x3 
  .rodata.atanhi
-                0x0800b520       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
+                0x0800b518       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
  .rodata.atanlo
-                0x0800b540       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
+                0x0800b538       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-s_atan.o)
  .rodata.CSWTCH.8
-                0x0800b560       0x18 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
+                0x0800b558       0x18 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
  .rodata.CSWTCH.9
-                0x0800b578       0x18 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
-                0x0800b590                . = ALIGN (0x4)
+                0x0800b570       0x18 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(lib_a-e_atan2.o)
+                0x0800b588                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800b590        0x8
-                0x0800b590                __exidx_start = .
+.ARM            0x0800b588        0x8
+                0x0800b588                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800b590        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0800b598                __exidx_end = .
+ .ARM.exidx     0x0800b588        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x0800b590                __exidx_end = .
 
-.rel.dyn        0x0800b598        0x0
- .rel.iplt      0x0800b598        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0800b590        0x0
+ .rel.iplt      0x0800b590        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x0800b598        0x0
-                0x0800b598                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800b590        0x0
+                0x0800b590                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800b598                PROVIDE (__preinit_array_end = .)
+                0x0800b590                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800b598        0x8
-                0x0800b598                PROVIDE (__init_array_start = .)
+.init_array     0x0800b590        0x8
+                0x0800b590                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0800b598        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x0800b590        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0800b59c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800b5a0                PROVIDE (__init_array_end = .)
+ .init_array    0x0800b594        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800b598                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0800b5a0        0x4
-                0x0800b5a0                PROVIDE (__fini_array_start = .)
+.fini_array     0x0800b598        0x4
+                0x0800b598                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800b5a0        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800b5a4                PROVIDE (__fini_array_end = .)
-                0x0800b5a4                _sidata = LOADADDR (.data)
+ .fini_array    0x0800b598        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800b59c                PROVIDE (__fini_array_end = .)
+                0x0800b59c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0xa48 load address 0x0800b5a4
+.data           0x20000000      0xa48 load address 0x0800b59c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2424,11 +2424,11 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x20000a48                . = ALIGN (0x4)
                 0x20000a48                _edata = .
 
-.igot.plt       0x20000a48        0x0 load address 0x0800bfec
+.igot.plt       0x20000a48        0x0 load address 0x0800bfe4
  .igot.plt      0x20000a48        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000a48                . = ALIGN (0x4)
 
-.bss            0x20000a48      0x374 load address 0x0800bfec
+.bss            0x20000a48      0x374 load address 0x0800bfe4
                 0x20000a48                _sbss = .
                 0x20000a48                __bss_start__ = _sbss
  *(.bss)
@@ -2521,7 +2521,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x20000dbc                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000dbc      0x604 load address 0x0800bfec
+                0x20000dbc      0x604 load address 0x0800bfe4
                 0x20000dc0                . = ALIGN (0x8)
  *fill*         0x20000dbc        0x4 
                 0x20000dc0                PROVIDE (end = .)
@@ -2951,7 +2951,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
  .debug_str     0x00003437      0x1ef CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                                 0x65f (size before relaxing)
  .debug_str     0x00003626      0xcb2 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                               0x1673 (size before relaxing)
+                               0x166c (size before relaxing)
  .debug_str     0x000042d8      0x48d CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
                                 0xe6d (size before relaxing)
  .debug_str     0x00004765      0x5e7 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
@@ -2985,89 +2985,89 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1
  .comment       0x00000049       0x4a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .comment       0x00000049       0x4a CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 
-.debug_frame    0x00000000     0x427c
+.debug_frame    0x00000000     0x428c
  .debug_frame   0x00000000       0x54 CMakeFiles/balance_car_v2.elf.dir/Core/Src/encoder.c.obj
  .debug_frame   0x00000054       0x38 CMakeFiles/balance_car_v2.elf.dir/Core/Src/gpio.c.obj
  .debug_frame   0x0000008c       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/i2c.c.obj
- .debug_frame   0x000000ec       0x94 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x00000180       0xfc CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
- .debug_frame   0x0000027c       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/pid.c.obj
- .debug_frame   0x000002b0       0xb8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
- .debug_frame   0x00000368       0x28 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x00000390      0x108 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x00000498      0x168 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
- .debug_frame   0x00000600       0x30 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x00000630       0x48 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
- .debug_frame   0x00000678       0x40 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
- .debug_frame   0x000006b8      0x124 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
- .debug_frame   0x000007dc       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
- .debug_frame   0x0000083c      0x1cc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x00000a08      0x118 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x00000b20       0xe4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x00000c04      0x970 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_frame   0x00001574      0x190 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00001704      0xb18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_frame   0x0000221c      0x40c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_frame   0x00002628      0x5c4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_frame   0x00002bec       0xac c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00002c98       0x50 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00002ce8       0xc4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00002dac       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x00002dd0       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00002e1c       0x38 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x00002e54       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
- .debug_frame   0x00002e74       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002ea0       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x00002ecc       0x74 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
- .debug_frame   0x00002f40       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
- .debug_frame   0x00002f88       0x94 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
- .debug_frame   0x0000301c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
- .debug_frame   0x00003048       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x000030a4       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x000030c4       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
- .debug_frame   0x00003150       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
- .debug_frame   0x000031c0      0x154 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .debug_frame   0x00003314       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x00003348       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
- .debug_frame   0x000033d4       0x54 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
- .debug_frame   0x00003428       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
- .debug_frame   0x00003468       0xb0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00003518       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
- .debug_frame   0x00003588       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
- .debug_frame   0x000035b8       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x00003604       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
- .debug_frame   0x0000362c       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
- .debug_frame   0x0000365c      0x260 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
- .debug_frame   0x000038bc       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
- .debug_frame   0x000038ec       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x00003918       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .debug_frame   0x000039a4       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
- .debug_frame   0x000039c4       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
- .debug_frame   0x000039f0       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
- .debug_frame   0x00003acc       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
- .debug_frame   0x00003af8       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
- .debug_frame   0x00003b2c       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
- .debug_frame   0x00003b6c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
- .debug_frame   0x00003b98       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
- .debug_frame   0x00003bc4       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
- .debug_frame   0x00003c00       0x6c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
- .debug_frame   0x00003c6c       0x88 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
- .debug_frame   0x00003cf4       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
- .debug_frame   0x00003d20       0x64 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
- .debug_frame   0x00003d84       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
- .debug_frame   0x00003db0       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
- .debug_frame   0x00003e18       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
- .debug_frame   0x00003e44       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00003e90       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
- .debug_frame   0x00003ed0       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
- .debug_frame   0x00003efc       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
- .debug_frame   0x00003f44       0x64 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
- .debug_frame   0x00003fa8       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
- .debug_frame   0x00003fe8       0x60 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
- .debug_frame   0x00004048       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
- .debug_frame   0x00004084       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
- .debug_frame   0x000040ac      0x114 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
- .debug_frame   0x000041c0       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
- .debug_frame   0x000041fc       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000421c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00004248       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000ec       0xa4 CMakeFiles/balance_car_v2.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x00000190       0xfc CMakeFiles/balance_car_v2.elf.dir/Core/Src/mpu6050.c.obj
+ .debug_frame   0x0000028c       0x34 CMakeFiles/balance_car_v2.elf.dir/Core/Src/pid.c.obj
+ .debug_frame   0x000002c0       0xb8 CMakeFiles/balance_car_v2.elf.dir/Core/Src/retarget.c.obj
+ .debug_frame   0x00000378       0x28 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x000003a0      0x108 CMakeFiles/balance_car_v2.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x000004a8      0x168 CMakeFiles/balance_car_v2.elf.dir/Core/Src/syscalls.c.obj
+ .debug_frame   0x00000610       0x30 CMakeFiles/balance_car_v2.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00000640       0x48 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tb6612.c.obj
+ .debug_frame   0x00000688       0x40 CMakeFiles/balance_car_v2.elf.dir/Core/Src/test_freq.c.obj
+ .debug_frame   0x000006c8      0x124 CMakeFiles/balance_car_v2.elf.dir/Core/Src/tim.c.obj
+ .debug_frame   0x000007ec       0x60 CMakeFiles/balance_car_v2.elf.dir/Core/Src/usart.c.obj
+ .debug_frame   0x0000084c      0x1cc CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000a18      0x118 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x00000b30       0xe4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x00000c14      0x970 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_frame   0x00001584      0x190 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x00001714      0xb18 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_frame   0x0000222c      0x40c CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_frame   0x00002638      0x5c4 CMakeFiles/balance_car_v2.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_frame   0x00002bfc       0xac c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00002ca8       0x50 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00002cf8       0xc4 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00002dbc       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00002de0       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00002e2c       0x38 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x00002e64       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
+ .debug_frame   0x00002e84       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x00002eb0       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00002edc       0x74 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
+ .debug_frame   0x00002f50       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
+ .debug_frame   0x00002f98       0x94 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+ .debug_frame   0x0000302c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
+ .debug_frame   0x00003058       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000030b4       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x000030d4       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+ .debug_frame   0x00003160       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+ .debug_frame   0x000031d0      0x154 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+ .debug_frame   0x00003324       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00003358       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+ .debug_frame   0x000033e4       0x54 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x00003438       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
+ .debug_frame   0x00003478       0xb0 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00003528       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+ .debug_frame   0x00003598       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x000035c8       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00003614       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000363c       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x0000366c      0x260 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+ .debug_frame   0x000038cc       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
+ .debug_frame   0x000038fc       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00003928       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+ .debug_frame   0x000039b4       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
+ .debug_frame   0x000039d4       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
+ .debug_frame   0x00003a00       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00003adc       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+ .debug_frame   0x00003b08       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00003b3c       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
+ .debug_frame   0x00003b7c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
+ .debug_frame   0x00003ba8       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+ .debug_frame   0x00003bd4       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+ .debug_frame   0x00003c10       0x6c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
+ .debug_frame   0x00003c7c       0x88 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
+ .debug_frame   0x00003d04       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+ .debug_frame   0x00003d30       0x64 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
+ .debug_frame   0x00003d94       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
+ .debug_frame   0x00003dc0       0x68 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+ .debug_frame   0x00003e28       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x00003e54       0x4c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00003ea0       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
+ .debug_frame   0x00003ee0       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+ .debug_frame   0x00003f0c       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
+ .debug_frame   0x00003f54       0x64 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
+ .debug_frame   0x00003fb8       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
+ .debug_frame   0x00003ff8       0x60 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00004058       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00004094       0x28 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
+ .debug_frame   0x000040bc      0x114 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
+ .debug_frame   0x000041d0       0x3c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
+ .debug_frame   0x0000420c       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000422c       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00004258       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
