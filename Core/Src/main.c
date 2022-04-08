@@ -58,16 +58,17 @@ PID_Datatype balance;
 float target_degree = 0;
 PID_Datatype speed;
 float target_speed = 0;
+float target_rotate = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+
 /* USER CODE BEGIN PFP */
 void set_tb6612();
-
 void set_pid();
-
 void set_speed(char *cmd);
+void set_rotate(char *cmd);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -79,37 +80,36 @@ void set_speed(char *cmd);
   * @brief  The application entry point.
   * @retval int
   */
-int main(void)
-{
-  /* USER CODE BEGIN 1 */
+int main(void) {
+    /* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
+    /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+    /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+    HAL_Init();
 
-  /* USER CODE BEGIN Init */
+    /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+    /* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+    /* Configure the system clock */
+    SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+    /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+    /* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_TIM1_Init();
-  MX_TIM2_Init();
-  MX_TIM4_Init();
-  MX_USART3_UART_Init();
-  MX_I2C1_Init();
-  MX_TIM3_Init();
-  /* USER CODE BEGIN 2 */
+    /* Initialize all configured peripherals */
+    MX_GPIO_Init();
+    MX_TIM1_Init();
+    MX_TIM2_Init();
+    MX_TIM4_Init();
+    MX_USART3_UART_Init();
+    MX_I2C1_Init();
+    MX_TIM3_Init();
+    /* USER CODE BEGIN 2 */
     while (MPU6050_Init(&hi2c1) == 1); // 初始化MPU6050
     RetargetInit(&huart3); // 初始化printf重载
 
@@ -122,10 +122,11 @@ int main(void)
 
     uart_parser_init(&huart3);
     uart_parser_add_command('S', set_speed, "set speed");
-  /* USER CODE END 2 */
+    uart_parser_add_command('R', set_rotate, "set rotate");
+    /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+    /* Infinite loop */
+    /* USER CODE BEGIN WHILE */
     while (1) {
         test_freq_begin();
 
@@ -139,57 +140,54 @@ int main(void)
         avg = (motorA + motorB) / 2;
         u2 = (int) pid_get_u(&speed, target_speed, avg);
 
-        tb6612_set_value(&tb6612, MOTOR_A, u1 + u2);
-        tb6612_set_value(&tb6612, MOTOR_B, u1 + u2);
+        tb6612_set_value(&tb6612, MOTOR_A, u1 + u2 + target_rotate);
+        tb6612_set_value(&tb6612, MOTOR_B, u1 + u2 - target_rotate);
 
         HAL_Delay(5);
         uint32_t freq = test_freq_end();
 
 //        printf("motorA:%.1f\tmotorB:%.2f\tdegree:%.1f\tfreq:%lu\n", motorA, motorB, mpu6050.KalmanAngleX, freq);
 
-    /* USER CODE END WHILE */
+        /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
+        /* USER CODE BEGIN 3 */
     }
-  /* USER CODE END 3 */
+    /* USER CODE END 3 */
 }
 
 /**
   * @brief System Clock Configuration
   * @retval None
   */
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+void SystemClock_Config(void) {
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+    /** Initializes the RCC Oscillators according to the specified parameters
+    * in the RCC_OscInitTypeDef structure.
+    */
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+    RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+        Error_Handler();
+    }
+    /** Initializes the CPU, AHB and APB buses clocks
+    */
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+                                  | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+        Error_Handler();
+    }
 }
 
 /* USER CODE BEGIN 4 */
@@ -210,9 +208,9 @@ void set_tb6612() {
 };
 
 void set_pid() {
-    balance.Kp = 450; //450  回复力
+    balance.Kp = 400; //400  回复力
     balance.Ki = 0;
-    balance.Kd = 2200; //2200  阻尼力
+    balance.Kd = 2800; //2800  阻尼力
     balance.max_integral = 720;
     balance.min_integral = -720;
     balance.max_u = 7200;
@@ -220,11 +218,11 @@ void set_pid() {
     balance.integral = 0;
     balance.last_error = 0;
 
-    speed.Kp = -700; // -700
-    speed.Ki = -3.5; //-3.5 速度的积分就是距离，故速度积分误差可以让小车回到原位
+    speed.Kp = -800; // -800
+    speed.Ki = -0; //-3.5 速度的积分就是距离，故速度积分误差可以让小车回到原位
     speed.Kd = 0; //
-    speed.max_integral = 720;
-    speed.min_integral = -720;
+    speed.max_integral = 2000;
+    speed.min_integral = -2000;
     speed.max_u = 7200;
     speed.min_u = -7200;
     speed.integral = 0;
@@ -233,7 +231,12 @@ void set_pid() {
 
 void set_speed(char *cmd) {
     uart_parser_scalar(&target_speed, cmd);
-    printf("%s\n", cmd);
+    printf("Speed:%s\n", cmd);
+}
+
+void set_rotate(char *cmd){
+    uart_parser_scalar(&target_rotate, cmd);
+    printf("Rotate:%s\n", cmd);
 }
 /* USER CODE END 4 */
 
@@ -241,14 +244,13 @@ void set_speed(char *cmd) {
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
+void Error_Handler(void) {
+    /* USER CODE BEGIN Error_Handler_Debug */
     /* User can add his own implementation to report the HAL error return state */
     __disable_irq();
     while (1) {
     }
-  /* USER CODE END Error_Handler_Debug */
+    /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
